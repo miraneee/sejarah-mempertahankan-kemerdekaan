@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perjuangan Bersenjata - Kemerdekaan Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="armed-struggle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Kemerdekaan Indonesia</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="perjuangan-bersenjata.html" class="nav-link active">Perjuangan Bersenjata</a></li>
+                <li><a href="perjuangan-diplomasi.html" class="nav-link">Perjuangan Diplomasi</a></li>
+                <li><a href="tokoh-penting.html" class="nav-link">Tokoh Penting</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="page-title">Perjuangan Bersenjata</h1>
+            <p class="page-subtitle">Perlawanan heroik rakyat Indonesia dalam mempertahankan kemerdekaan melalui kekuatan senjata</p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <div class="container">
+            <div class="intro-content" data-aos="fade-up">
+                <h2>Latar Belakang Perjuangan Bersenjata</h2>
+                <p>Pada tanggal 29 September 1945, tentara AFNEI (Allied Forces Netherlands East Indies) beserta NICA (Netherland Indies Civil Administration) mendarat di Jakarta. Awalnya mereka ingin membebaskan tawanan perang dan melucuti tentara Jepang, namun kedatangan mereka ditentang oleh bangsa Indonesia karena tujuan sebenarnya adalah membantu Belanda dalam mempertahankan kemerdekaannya.</p>
+                <div class="intro-stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="stat-number" data-counter="3">0</div>
+                        <div class="stat-label">Pertempuran Utama</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="stat-number" data-counter="1945">0</div>
+                        <div class="stat-label">Tahun Dimulai</div>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="stat-number" data-counter="1949">0</div>
+                        <div class="stat-label">Tahun Berakhir</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Timeline -->
+    <section class="interactive-timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Timeline Perjuangan Bersenjata</h2>
+                <p class="section-subtitle">Kronologi peristiwa-peristiwa penting dalam perjuangan bersenjata</p>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                
+                <!-- Pertempuran Surabaya -->
+                <div class="timeline-event" data-aos="fade-right" data-event="surabaya">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">10 November 1945</div>
+                        <h3>Pertempuran Surabaya</h3>
+                        <p>Pertempuran heroik yang melibatkan Bung Tomo dan rakyat Surabaya melawan tentara Sekutu.</p>
+                        <button class="timeline-btn" onclick="openModal('surabaya')">Selengkapnya</button>
+                    </div>
+                </div>
+
+                <!-- Pertempuran Ambarawa -->
+                <div class="timeline-event" data-aos="fade-left" data-event="ambarawa">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">Desember 1945</div>
+                        <h3>Pertempuran Ambarawa</h3>
+                        <p>Perlawanan di Jawa Tengah yang dipimpin oleh Kolonel Soedirman melawan tentara Sekutu.</p>
+                        <button class="timeline-btn" onclick="openModal('ambarawa')">Selengkapnya</button>
+                    </div>
+                </div>
+
+                <!-- Puputan Margarana -->
+                <div class="timeline-event" data-aos="fade-right" data-event="margarana">
+                    <div class="timeline-marker">
+                        <div class="marker-inner"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-date">20 November 1946</div>
+                        <h3>Puputan Margarana</h3>
+                        <p>Pertempuran terakhir I Gusti Ngurah Rai dan pasukannya melawan Belanda di Bali.</p>
+                        <button class="timeline-btn" onclick="openModal('margarana')">Selengkapnya</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battle Details Modals -->
+    <div id="modal-surabaya" class="battle-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Pertempuran Surabaya</h2>
+                <button class="modal-close" onclick="closeModal('surabaya')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="battle-info">
+                    <div class="battle-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                    </div>
+                    <div class="battle-details">
+                        <h3>Latar Belakang</h3>
+                        <p>Karni Ilyas Bung Tomo, guys? Yaps. Beliau merupakan pemimpin pertempuran di Surabaya. Bung Tomo dengan tegas menolak ultimatum dari Inggris yang dipimpin oleh Mayjen C.E Mansergh.</p>
+                        
+                        <h3>Jalannya Pertempuran</h3>
+                        <p>Isi ultimatum tersebut ialah para pejuang Indonesia harus menyerahkan diri paling lambat 10 November 1945 pukul 06:00 dan anak-anak Surabaya? Mereka memilih mempertahankan kemerdekaannya. Pertempuran pada tanggal tersebut akhir pecan dan berlangsung selama tiga minggu.</p>
+                        
+                        <h3>Hasil dan Dampak</h3>
+                        <p>Pertempuran ini menjadi simbol heroisme rakyat Indonesia dan diperingati sebagai Hari Pahlawan setiap tanggal 10 November.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-ambarawa" class="battle-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Pertempuran Ambarawa</h2>
+                <button class="modal-close" onclick="closeModal('ambarawa')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="battle-info">
+                    <div class="battle-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                    </div>
+                    <div class="battle-details">
+                        <h3>Latar Belakang</h3>
+                        <p>Pertempuran ini dilatarbelakangi penjualan, guys. Awalnya tuh NICA dan sekutunya datang ingin membebaskan tawanan perang. Eh malainya tuh di operasikan setelah bebas.</p>
+                        
+                        <h3>Peran Kolonel Soedirman</h3>
+                        <p>Pimpinan Sekutu Brigjen Bethell berusaha menguasai desa-desa di Ambarawa, namun ditentang oleh TKR (Tentara Keamanan Rakyat). Dalam pertempuran ini Letkol Isdiman gugur dan digantikan Kolonel Soedirman.</p>
+                        
+                        <h3>Hasil Pertempuran</h3>
+                        <p>Pengepungan Ambarawa dari Banyumas, Salatiga, Surakarta, dan Yogyakarta berhasil dilakukan, sehingga pasukan Sekutu mundur pada tanggal 15 Desember 1945. Hingga saat ini tanggal tersebut diperingati sebagai Hari Infanteri di Indonesia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-margarana" class="battle-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Puputan Margarana</h2>
+                <button class="modal-close" onclick="closeModal('margarana')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="battle-info">
+                    <div class="battle-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-temple-hindu"></i>
+                        </div>
+                    </div>
+                    <div class="battle-details">
+                        <h3>Latar Belakang</h3>
+                        <p>Namanya haus kekuasaan ya begini ini contohnya. Sudah melakukan Perundingan Linggarjati yang menyatakan bahwa Jawa, Sumatra, dan Madura secara de facto. Belanda masih ingin menguasai Bali dan mendirikan Negara Indonesia Timur.</p>
+                        
+                        <h3>Perjuangan I Gusti Ngurah Rai</h3>
+                        <p>Tentunya, pejuang-pejuang Bali tidak lu mendukung. Dipimpin oleh I Gusti Ngurah Rai dengan Belanda pecah di Tabanan. Malainya, I Gusti Ngurah Rai dan seluruh pasukannya mempertahankan perlawanan, namun Belanda meminta tambahan pasukan dan berhasil memukul mundur pasukan I Gusti Ngurah Rai dan beliau gugur dalam pertempuran tersebut.</p>
+                        
+                        <h3>Makna Puputan</h3>
+                        <p>Puputan berarti "pertempuran sampai titik darah penghabisan". I Gusti Ngurah Rai dan pasukannya memilih bertempur hingga mati daripada menyerah kepada Belanda, menunjukkan semangat heroisme yang luar biasa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heroes Section -->
+    <section class="heroes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pahlawan Perjuangan Bersenjata</h2>
+                <p class="section-subtitle">Tokoh-tokoh yang memimpin perlawanan bersenjata</p>
+            </div>
+            <div class="heroes-grid">
+                <div class="hero-card" data-aos="zoom-in">
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="hero-info">
+                        <h3>Bung Tomo</h3>
+                        <p class="hero-role">Pemimpin Pertempuran Surabaya</p>
+                        <p class="hero-description">Tokoh yang memimpin perlawanan heroik di Surabaya dan menolak ultimatum Sekutu.</p>
+                    </div>
+                </div>
+                <div class="hero-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="hero-info">
+                        <h3>Kolonel Soedirman</h3>
+                        <p class="hero-role">Panglima Pertempuran Ambarawa</p>
+                        <p class="hero-description">Pemimpin TKR yang berhasil mengepung dan memukul mundur pasukan Sekutu di Ambarawa.</p>
+                    </div>
+                </div>
+                <div class="hero-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                    </div>
+                    <div class="hero-info">
+                        <h3>I Gusti Ngurah Rai</h3>
+                        <p class="hero-role">Pahlawan Puputan Margarana</p>
+                        <p class="hero-description">Pemimpin perlawanan di Bali yang gugur dalam pertempuran hingga titik darah penghabisan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation to other pages -->
+    <section class="page-navigation">
+        <div class="container">
+            <div class="nav-cards">
+                <a href="index.html" class="nav-card" data-aos="fade-right">
+                    <div class="nav-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="nav-content">
+                        <h3>Kembali ke Beranda</h3>
+                        <p>Lihat gambaran umum perjuangan kemerdekaan</p>
+                    </div>
+                </a>
+                <a href="perjuangan-diplomasi.html" class="nav-card" data-aos="fade-left">
+                    <div class="nav-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="nav-content">
+                        <h3>Perjuangan Diplomasi</h3>
+                        <p>Pelajari upaya diplomatik Indonesia</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Perjuangan Kemerdekaan Indonesia</h4>
+                    <p>Website edukatif tentang sejarah perjuangan mempertahankan kemerdekaan Indonesia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="perjuangan-bersenjata.html">Perjuangan Bersenjata</a></li>
+                        <li><a href="perjuangan-diplomasi.html">Perjuangan Diplomasi</a></li>
+                        <li><a href="tokoh-penting.html">Tokoh Penting</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Proyek Sejarah Kelompok 5 (I love Kasane Teto btw).</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="armed-struggle.js"></script>
+</body>
+</html>
